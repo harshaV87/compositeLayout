@@ -13,6 +13,10 @@
 		026589E324DCF32F004B2337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026589E124DCF32F004B2337 /* Main.storyboard */; };
 		026589E524DCF331004B2337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026589E424DCF331004B2337 /* Assets.xcassets */; };
 		026589E824DCF331004B2337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026589E624DCF331004B2337 /* LaunchScreen.storyboard */; };
+		026589F124DCF464004B2337 /* TableViewCellWithColView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026589F024DCF464004B2337 /* TableViewCellWithColView.swift */; };
+		026589F324DCF481004B2337 /* CollectionViewCellWithTabCel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026589F224DCF481004B2337 /* CollectionViewCellWithTabCel.swift */; };
+		026589F624DD014A004B2337 /* modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026589F524DD014A004B2337 /* modals.swift */; };
+		02658A2E24DFCF12004B2337 /* colProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02658A2D24DFCF12004B2337 /* colProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		026589E424DCF331004B2337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026589E724DCF331004B2337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		026589E924DCF331004B2337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026589F024DCF464004B2337 /* TableViewCellWithColView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellWithColView.swift; sourceTree = "<group>"; };
+		026589F224DCF481004B2337 /* CollectionViewCellWithTabCel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellWithTabCel.swift; sourceTree = "<group>"; };
+		026589F524DD014A004B2337 /* modals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modals.swift; sourceTree = "<group>"; };
+		02658A2D24DFCF12004B2337 /* colProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				026589DB24DCF32F004B2337 /* AppDelegate.swift */,
 				026589DD24DCF32F004B2337 /* SceneDelegate.swift */,
-				026589DF24DCF32F004B2337 /* ViewController.swift */,
+				026589EF24DCF40C004B2337 /* cells */,
+				02658A2F24DFD340004B2337 /* viewController */,
+				026589F424DD0131004B2337 /* Modal  */,
 				026589E124DCF32F004B2337 /* Main.storyboard */,
 				026589E424DCF331004B2337 /* Assets.xcassets */,
 				026589E624DCF331004B2337 /* LaunchScreen.storyboard */,
 				026589E924DCF331004B2337 /* Info.plist */,
 			);
 			path = compositeLayout;
+			sourceTree = "<group>";
+		};
+		026589EF24DCF40C004B2337 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				026589F024DCF464004B2337 /* TableViewCellWithColView.swift */,
+				026589F224DCF481004B2337 /* CollectionViewCellWithTabCel.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		026589F424DD0131004B2337 /* Modal  */ = {
+			isa = PBXGroup;
+			children = (
+				026589F524DD014A004B2337 /* modals.swift */,
+				02658A2D24DFCF12004B2337 /* colProtocols.swift */,
+			);
+			path = "Modal ";
+			sourceTree = "<group>";
+		};
+		02658A2F24DFD340004B2337 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				026589DF24DCF32F004B2337 /* ViewController.swift */,
+			);
+			path = viewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02658A2E24DFCF12004B2337 /* colProtocols.swift in Sources */,
 				026589E024DCF32F004B2337 /* ViewController.swift in Sources */,
+				026589F124DCF464004B2337 /* TableViewCellWithColView.swift in Sources */,
+				026589F324DCF481004B2337 /* CollectionViewCellWithTabCel.swift in Sources */,
 				026589DC24DCF32F004B2337 /* AppDelegate.swift in Sources */,
 				026589DE24DCF32F004B2337 /* SceneDelegate.swift in Sources */,
+				026589F624DD014A004B2337 /* modals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
